@@ -1,0 +1,12 @@
+-- Active: 1694163885277@@127.0.0.1@5432
+CREATE DATABASE employee_projects;
+
+\c employee_projects; -- Connect to the database
+
+CREATE TABLE projects (
+  id SERIAL PRIMARY KEY,
+  employee_name VARCHAR(255),
+  project_name VARCHAR(255),
+  status VARCHAR(50),
+  description TEXT
+);

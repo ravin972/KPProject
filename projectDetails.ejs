@@ -1,0 +1,6 @@
+<h2>Following are the details of <%= employeeName %> projects:</h2>
+<ul>
+  <% projects.forEach(project => { %>
+    <li><%= project.project_name %> (<%= project.status %>)</li>
+  <% }); %>
+</ul>
